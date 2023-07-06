@@ -4,12 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Import JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Taxi Web</title>
+
+    <!-- Import Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Web Site name -->
+    <title>Kan Driver</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- Import Style -->
+    <link rel="stylesheet" href="./css/style.css">
+
   </head>
 
   <body>
-    <div class="form">
+    <!-- <div class="form">
       <form action="" onsubmit=" return sendtelegram()">
         <input
           type="text"
@@ -39,7 +53,35 @@
         <br />
         <input type="submit" value="Jiberiw" id="btn" />
       </form>
-    </div>
-    <script src="sendtelegram.js"></script>
+    </div> -->
+    <!-- Start of Navbar -->
+    <nav>
+      <h1 class="logo">
+        <img src="./images/logo.png" alt=""> Kan Driver
+      </h1>
+      <ul class="navigation">
+        <li>
+          <a href="">Bas bet</a>
+        </li>
+        <li>
+          <a href="">Aydawshilar</a>
+        </li>
+        <li>
+          <a href="">Jolawshilar</a>
+        </li>
+        <li>
+          <a href="">Biz haqqimizda</a>
+        </li>
+        <li>
+          <a href="">Baylanis</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+    <script src="/js/sendtelegram.js"></script>
   </body>
 </html>
