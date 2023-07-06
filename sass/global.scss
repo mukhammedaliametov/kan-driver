@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
 
 $globalColor: #182430;
-$globalColor2: #1A6CC0;
-$globalFont: 'Ubuntu', sans-serif;
-$globalFont2: 'Sora', sans-serif;
+$globalColor2: #1a6cc0;
+$globalFont: "Ubuntu", sans-serif;
+$globalFont2: "Sora", sans-serif;
 
 // Global style
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,46 +17,102 @@ $globalFont2: 'Sora', sans-serif;
 }
 
 // Navbar style
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
   background: $globalColor;
+  z-index: 999;
   // Navbar logo
-  .logo{
+  .logo {
     display: flex;
     align-items: center;
     font-family: $globalFont;
     font-size: 1.8rem;
     color: $globalColor2;
-    img{
+    img {
       margin-right: 10px;
     }
   }
   // Navbar items
-  .navigation{
+  .navigation {
     display: flex;
-    li{
+    li {
       margin: 0px 15px;
       position: relative;
-      a{
+      a {
         font-family: $globalFont2;
         color: $globalColor2;
       }
     }
-    
   }
   // Navbar networks
-  .networks{
-    a{
+  .networks {
+    a {
       margin: 0px 8px;
       font-size: 1.2rem;
       color: $globalColor2;
     }
   }
-  // Hamburger menu
-  .hamburger{
+  // Navbar hamburger menu
+  .hamburger {
     display: none;
+  }
+  // Customization 1200px
+  @media only screen and (max-width: 1200px) {
+    padding: 10px 20px;
+    .networks {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 940px) {
+    padding: 8px 20px;
+    .logo {
+      font-size: 1.4rem;
+    }
+    .navigation {
+      position: absolute;
+      background-color: $globalColor;
+      top: 93px;
+      left: 0;
+      width: 100%;
+      height: 0vh;
+      transition: .5s ease;
+      padding-top: 10px;
+      li {
+        display: none;
+        padding: 20px;
+        border-bottom: 1px solid #fff;
+      }
+      &.active {
+        display: inline;
+        height: 42vh;
+        li {
+          display: block;
+          
+        }
+      }
+    }
+    .hamburger {
+      display: block;
+      .fa-bars {
+        font-size: 1.5rem;
+        color: $globalColor2;
+      }
+      .fa-times {
+        font-size: 1.5rem;
+        color: $globalColor2;
+        display: none;
+      }
+      &.active {
+        .fa-times {
+          display: block;
+        }
+        .fa-bars {
+          display: none;
+        }
+      }
+    }
   }
 }
