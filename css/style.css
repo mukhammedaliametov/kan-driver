@@ -1,6 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background: #182430;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  color: #1A6CC0;
+}
+.navbar .logo img {
+  margin-right: 10px;
+}
+.navbar .navigation {
+  display: flex;
+}
+.navbar .navigation li {
+  margin: 0px 15px;
+  position: relative;
+}
+.navbar .navigation li a {
+  font-family: "Sora", sans-serif;
+  color: #1A6CC0;
+}
+.navbar .networks a {
+  margin: 0px 8px;
+  font-size: 1.2rem;
+  color: #1A6CC0;
+}
+.navbar .hamburger {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
 
-$globalColor: #000;
-$globalBgColor: '';
+$globalColor: #182430;
+$globalColor2: #1A6CC0;
 $globalFont: 'Ubuntu', sans-serif;
-$globalFont2: 'Sora', sans-serif'
+$globalFont2: 'Sora', sans-serif;
+
+// Global style
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: sans-serif;
+}
+
+// Navbar style
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background: $globalColor;
+  // Navbar logo
+  .logo{
+    display: flex;
+    align-items: center;
+    font-family: $globalFont;
+    font-size: 1.8rem;
+    color: $globalColor2;
+    img{
+      margin-right: 10px;
+    }
+  }
+  // Navbar items
+  .navigation{
+    display: flex;
+    li{
+      margin: 0px 15px;
+      position: relative;
+      a{
+        font-family: $globalFont2;
+        color: $globalColor2;
+      }
+    }
+    
+  }
+  // Navbar networks
+  .networks{
+    a{
+      margin: 0px 8px;
+      font-size: 1.2rem;
+      color: $globalColor2;
+    }
+  }
+  // Hamburger menu
+  .hamburger{
+    display: none;
+  }
+}
