@@ -6,4 +6,9 @@ const navbarItems = document.querySelector('.navigation')
 hamburgerEl.addEventListener('click', () => {
   hamburgerEl.classList.toggle('active');
   navbarItems.classList.toggle('active');
-})
+});
+
+const closeNav = () => {
+  hamburgerEl.classList.remove('active');
+  navbarItems.classList.remove('active');
+}
