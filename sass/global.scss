@@ -7,6 +7,24 @@ $globalColor3: #FFE421;
 $globalFont: "Ubuntu", sans-serif;
 $globalFont2: "Sora", sans-serif;
 
+@mixin global-logo {
+  font-family: $globalFont;
+  font-size: 1.8rem;
+  color: $globalColor2;
+}
+
+@mixin global-button{
+  color: #fff;
+  border: 1px solid $globalColor2;
+  font-family: $globalFont2;
+  padding: 10px 30px;
+  border-radius: 5px;
+  &:hover{
+    background: $globalColor3;
+    color: $globalColor;
+  }
+}
+
 // Global style
 * {
   margin: 0;
@@ -29,9 +47,7 @@ $globalFont2: "Sora", sans-serif;
   .logo {
     display: flex;
     align-items: center;
-    font-family: $globalFont;
-    font-size: 1.8rem;
-    color: $globalColor2;
+    @include global-logo();
     img {
       margin-right: 10px;
     }
@@ -127,8 +143,35 @@ $globalFont2: "Sora", sans-serif;
   height: calc(100vh - 100px);
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   padding: 0px 30px;
   img{
     width: 42%;
+  }
+  .titles{
+    padding: 0px 20px;
+    width: 50%;
+    span{
+      @include global-logo();
+      font-size: 2.5rem;
+      padding: 8px 0px;
+      color: #fff;
+      .text{
+        color: $globalColor2;
+      }
+    }
+    p{
+      padding: 5px 0px;
+      font-size: 1.1rem;
+      color: #fff;
+      font-family: $globalFont2;
+    }
+    .buttons{
+      margin: 15px 0px;
+      a{
+        @include global-button();
+        margin-right: 10px;
+      }
+    }
   }
 }
