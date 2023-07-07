@@ -24,6 +24,7 @@ $globalFont2: "Sora", sans-serif;
   padding: 10px 50px;
   background: $globalColor;
   z-index: 999;
+
   // Navbar logo
   .logo {
     display: flex;
@@ -31,22 +32,27 @@ $globalFont2: "Sora", sans-serif;
     font-family: $globalFont;
     font-size: 1.8rem;
     color: $globalColor2;
+
     img {
       margin-right: 10px;
     }
   }
+
   // Navbar items
   .navigation {
     display: flex;
+
     li {
       margin: 0px 15px;
       position: relative;
+
       a {
         font-family: $globalFont2;
         color: $globalColor2;
       }
     }
   }
+
   // Navbar networks
   .networks {
     a {
@@ -55,23 +61,29 @@ $globalFont2: "Sora", sans-serif;
       color: $globalColor2;
     }
   }
+
   // Navbar hamburger menu
   .hamburger {
     display: none;
   }
+
   // Customization 1200px
   @media only screen and (max-width: 1200px) {
     padding: 10px 20px;
+
     .networks {
       display: none;
     }
   }
+
   // Customization 940px
   @media only screen and (max-width: 940px) {
     padding: 8px 20px;
+
     .logo {
       font-size: 1.4rem;
     }
+
     .navigation {
       position: absolute;
       background-color: $globalColor;
@@ -81,38 +93,133 @@ $globalFont2: "Sora", sans-serif;
       height: 0vh;
       transition: .5s ease;
       padding-top: 10px;
+
       li {
         display: none;
         padding: 20px;
         border-bottom: 1px solid #fff;
       }
+
       &.active {
         display: inline;
         height: 42vh;
+
         li {
           display: block;
-          
+
         }
       }
     }
+
     .hamburger {
       display: block;
+
       .fa-bars {
         font-size: 1.5rem;
         color: $globalColor2;
       }
+
       .fa-times {
         font-size: 1.5rem;
         color: $globalColor2;
         display: none;
       }
+
       &.active {
         .fa-times {
           display: block;
         }
+
         .fa-bars {
           display: none;
         }
+      }
+    }
+  }
+}
+
+// Baylanis style
+.baylanis {
+  background-image: url(../images/taxi-png.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.349);
+  padding: 100px 250px;
+  h1{
+    color:$globalColor2;
+    font-family: $globalFont;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 2rem;
+  }
+  .card{
+    box-shadow:-10px 10px 10px 3px rgba(34, 32, 32, 0.808);
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 800px;
+    padding: 0;
+    .form{
+      width: 60%;
+      padding: 30px ;
+      height: 60vh;
+      h3{
+        padding-bottom: 20px;
+        font-family: $globalFont2;
+      }
+      .inputs{
+        justify-content: space-between;
+        display: flex;
+      }
+      .inputs2{
+        justify-content: space-between;
+        display: flex;
+      }
+      .input2{
+        width: 425px;
+      }
+      .input{
+        font-family: $globalFont2;
+        span{
+          font-size: .9rem;
+        }
+        width: 200px;
+        display:grid;
+        padding:15px 0;
+        input{
+          padding: 5px;
+          margin-top: 10px;
+          border: none;
+          border-bottom: 1px solid $globalColor;
+        }
+      }
+      button{
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: none;
+        background-color: $globalColor2;
+        font-weight: 600;
+        margin-top: 10px;
+        font-family: $globalFont2;
+      }
+    }
+    .location{
+      display:grid;
+      width: 40%;
+      background: linear-gradient(200deg, rgb(3, 238, 3), rgb(117, 196, 97));
+      padding: 30px;
+      height: 60vh;
+      h3{
+        font-family: $globalFont2;
+      }
+      span{
+        font-family: $globalFont2;
+      }
+      .icons i{
+        padding-right:10px;
       }
     }
   }

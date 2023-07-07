@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Import JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Import Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Import JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Web Site name -->
-    <title>Kan Driver</title>
+  <!-- Import Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Fav Icon -->
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <!-- Web Site name -->
+  <title>Kan Driver</title>
 
-    <!-- Import Style -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  <!-- Fav Icon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
-  <body>
-    <!-- <div class="form">
+  <!-- Import Style -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- <div class="form">
       <form action="" onsubmit=" return sendtelegram()">
         <input
           type="text"
@@ -59,41 +56,89 @@
         <input type="submit" value="Jiberiw" id="btn" />
       </form>
     </div> -->
-    <!-- Start of Navbar -->
-    <nav class="navbar">
-      <a href="" class="logo">
-        <img src="./images/logo.png" width="80" alt="" /> Kan Driver
-      </a>
-      <ul class="navigation">
-        <li onclick="closeNav()">
-          <a href="">Bas bet</a>
-        </li>
-        <li onclick="closeNav()">
-          <a href="">Shoferlar</a>
-        </li>
-        <li onclick="closeNav()">
-          <a href="">Jolawshılar</a>
-        </li>
-        <li onclick="closeNav()">
-          <a href="">Biz haqqımızda</a>
-        </li>
-        <li style="border-bottom: none;" onclick="closeNav()">
-          <a href="">Baylanıs</a>
-        </li>
-      </ul>
-      <div class="networks">
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-telegram"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+  <!-- Start of Navbar -->
+  <nav class="navbar">
+    <a href="" class="logo">
+      <img src="./images/logo.png" width="80" alt="" /> Kan Driver
+    </a>
+    <ul class="navigation">
+      <li onclick="closeNav()">
+        <a href="">Bas bet</a>
+      </li>
+      <li onclick="closeNav()">
+        <a href="">Shoferlar</a>
+      </li>
+      <li onclick="closeNav()">
+        <a href="">Jolawshılar</a>
+      </li>
+      <li onclick="closeNav()">
+        <a href="">Biz haqqımızda</a>
+      </li>
+      <li style="border-bottom: none;" onclick="closeNav()">
+        <a href="">Baylanıs</a>
+      </li>
+    </ul>
+    <div class="networks">
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-telegram"></i></a>
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="hamburger">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-times"></i>
+    </div>
+  </nav>
+  <section class="baylanis">
+    <h1>Baylanis</h1>
+    <div class="card">
+      <div class="form">
+        <h3>Xabar Qaldirin'</h3>
+        <div class="inputs">
+          <div class="input">
+            <span>Atin'iz</span>
+            <input type="text">
+          </div>
+          <div class="input">
+            <span>Telefon</span>
+            <input type="text">
+          </div>
+        </div>
+        <div class="inputs2">
+          <div class="input">
+            <span>Email</span>
+            <input type="email">
+          </div>
+          <div class="input">
+            <span>Jumisin'iz</span>
+            <input type="Email">
+          </div>
+        </div>
+        <div class="input">
+          <span>Massage</span>
+          <input type="text" class="input2">
+        </div>
+        <button>Jiberiw</button>
       </div>
-      <div class="hamburger">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-times"></i>
+      <div class="location">
+        <h3>Baylanis ushin mag'liwmat</h3>
+        <span><i class="fa-light fa-location-dot"></i> Lorem ipsum dolor sit amet.</span>
+        <span><i class="fa-regular fa-phone"></i> +998(00)000-00-00</span>
+        <span><i class="fa-regular fa-envelope"></i> user@gmail.com</span>
+        <span><i class="fa-light fa-globe"></i> www.web-psite.com</span>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-telegram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
       </div>
-    </nav>
-    <script src="/js/sendtelegram.js"></script>
-    <script src="./js/script.js"></script>
-  </body>
+  </section>
+  <script src="/js/sendtelegram.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
