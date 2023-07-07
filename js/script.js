@@ -9,6 +9,5 @@ hamburgerEl.addEventListener('click', () => {
 });
 
 const closeNav = () => {
-  hamburgerEl.classList.remove('active');
   navbarItems.classList.remove('active');
 }

@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
 
 $globalColor: #182430;
-$globalColor2: #1a6cc0;
+$globalColor2: #FFF652;
+$globalColor3: #FFE421;
 $globalFont: "Ubuntu", sans-serif;
 $globalFont2: "Sora", sans-serif;
 
@@ -44,6 +45,9 @@ $globalFont2: "Sora", sans-serif;
       a {
         font-family: $globalFont2;
         color: $globalColor2;
+        &:hover{
+          color: $globalColor3;
+        }
       }
     }
   }
@@ -115,5 +119,16 @@ $globalFont2: "Sora", sans-serif;
         }
       }
     }
+  }
+}
+// Home style
+.home{
+  background-color: $globalColor;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 30px;
+  img{
+    width: 42%;
   }
 }

@@ -22,7 +22,7 @@
   align-items: center;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
-  color: #1a6cc0;
+  color: #FFF652;
 }
 .navbar .logo img {
   margin-right: 10px;
@@ -36,12 +36,15 @@
 }
 .navbar .navigation li a {
   font-family: "Sora", sans-serif;
-  color: #1a6cc0;
+  color: #FFF652;
+}
+.navbar .navigation li a:hover {
+  color: #FFE421;
 }
 .navbar .networks a {
   margin: 0px 8px;
   font-size: 1.2rem;
-  color: #1a6cc0;
+  color: #FFF652;
 }
 .navbar .hamburger {
   display: none;
@@ -88,11 +91,11 @@
   }
   .navbar .hamburger .fa-bars {
     font-size: 1.5rem;
-    color: #1a6cc0;
+    color: #FFF652;
   }
   .navbar .hamburger .fa-times {
     font-size: 1.5rem;
-    color: #1a6cc0;
+    color: #FFF652;
     display: none;
   }
   .navbar .hamburger.active .fa-times {
@@ -101,6 +104,17 @@
   .navbar .hamburger.active .fa-bars {
     display: none;
   }
+}
+
+.home {
+  background-color: #182430;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 30px;
+}
+.home img {
+  width: 42%;
 }
 
 /*# sourceMappingURL=style.css.map */
