@@ -14,7 +14,56 @@
   align-items: center;
   padding: 10px 50px;
   background: #182430;
+<<<<<<< HEAD
   z-index: 999; }
+=======
+  z-index: 999;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  color: #FFF652;
+}
+.navbar .logo img {
+  margin-right: 10px;
+}
+.navbar .navigation {
+  display: flex;
+}
+.navbar .navigation li {
+  margin: 0px 15px;
+  position: relative;
+}
+.navbar .navigation li a {
+  font-family: "Sora", sans-serif;
+  color: #FFF652;
+}
+.navbar .navigation li a:hover {
+  color: #FFE421;
+}
+.navbar .networks a {
+  margin: 0px 8px;
+  font-size: 1.2rem;
+  color: #FFF652;
+}
+.navbar .hamburger {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  .navbar .networks {
+    display: none;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .navbar {
+    padding: 8px 20px;
+  }
+>>>>>>> 4fa31f7912f1704bc703a2b868602a7df6dc4275
   .navbar .logo {
     display: flex;
     align-items: center;
@@ -36,6 +85,7 @@
     font-size: 1.2rem;
     color: #1a6cc0; }
   .navbar .hamburger {
+<<<<<<< HEAD
     display: none; }
   @media only screen and (max-width: 1200px) {
     .navbar {
@@ -148,5 +198,73 @@
         font-family: "Sora", sans-serif; }
       .baylanis .card .location .icons i {
         padding-right: 10px; }
+=======
+    display: block;
+  }
+  .navbar .hamburger .fa-bars {
+    font-size: 1.5rem;
+    color: #FFF652;
+  }
+  .navbar .hamburger .fa-times {
+    font-size: 1.5rem;
+    color: #FFF652;
+    display: none;
+  }
+  .navbar .hamburger.active .fa-times {
+    display: block;
+  }
+  .navbar .hamburger.active .fa-bars {
+    display: none;
+  }
+}
+>>>>>>> 4fa31f7912f1704bc703a2b868602a7df6dc4275
+
+.home {
+  background-color: #182430;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 30px;
+}
+.home img {
+  width: 42%;
+}
+.home .titles {
+  padding: 0px 20px;
+  width: 50%;
+}
+.home .titles span {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  color: #FFF652;
+  font-size: 2.5rem;
+  padding: 8px 0px;
+  color: #fff;
+}
+.home .titles span .text {
+  color: #FFF652;
+}
+.home .titles p {
+  padding: 5px 0px;
+  font-size: 1.1rem;
+  color: #fff;
+  font-family: "Sora", sans-serif;
+}
+.home .titles .buttons {
+  margin: 15px 0px;
+}
+.home .titles .buttons a {
+  color: #fff;
+  border: 1px solid #FFF652;
+  font-family: "Sora", sans-serif;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.home .titles .buttons a:hover {
+  background: #FFE421;
+  color: #182430;
+}
 
 /*# sourceMappingURL=style.css.map */
