@@ -116,7 +116,7 @@
   padding: 0px 30px;
 }
 .home img {
-  width: 42%;
+  width: 100%;
 }
 .home .titles {
   padding: 0px 20px;
@@ -161,7 +161,7 @@
     min-height: 100vh;
   }
   .home img {
-    width: 0%;
+    width: 100%;
   }
   .home .titles {
     width: 100%;
