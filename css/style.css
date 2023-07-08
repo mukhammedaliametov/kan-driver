@@ -161,7 +161,7 @@
     min-height: 100vh;
   }
   .home img {
-    width: 100%;
+    width: 0%;
   }
   .home .titles {
     width: 100%;
