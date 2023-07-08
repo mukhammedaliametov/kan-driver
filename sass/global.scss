@@ -109,6 +109,7 @@ $globalFont2: "Sora", sans-serif;
       &.active {
         display: inline;
         height: 42vh;
+        box-shadow: 2px 2px 8px #000;
         li {
           display: block;
           
@@ -145,9 +146,11 @@ $globalFont2: "Sora", sans-serif;
   justify-content: space-evenly;
   align-items: center;
   padding: 0px 30px;
+  // Home img
   img{
     width: 42%;
   }
+  // Home titles
   .titles{
     padding: 0px 20px;
     width: 50%;
@@ -160,18 +163,32 @@ $globalFont2: "Sora", sans-serif;
         color: $globalColor2;
       }
     }
+    // Home paragraph
     p{
       padding: 5px 0px;
       font-size: 1.1rem;
       color: #fff;
       font-family: $globalFont2;
     }
+    // Home buttons
     .buttons{
       margin: 15px 0px;
       a{
         @include global-button();
         margin-right: 10px;
       }
+    }
+  }
+  // Customization 940px
+  @media only screen and (max-width: 940px){
+    flex-direction: column;
+    padding: 20px 10px;
+    min-height: 100vh;
+    img{
+      width: 100%;
+    }
+    .titles{
+      width: 100%;
     }
   }
 }

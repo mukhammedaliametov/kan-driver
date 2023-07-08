@@ -82,6 +82,7 @@
   .navbar .navigation.active {
     display: inline;
     height: 42vh;
+    box-shadow: 2px 2px 8px #000;
   }
   .navbar .navigation.active li {
     display: block;
@@ -152,6 +153,19 @@
 .home .titles .buttons a:hover {
   background: #FFE421;
   color: #182430;
+}
+@media only screen and (max-width: 940px) {
+  .home {
+    flex-direction: column;
+    padding: 20px 10px;
+    min-height: 100vh;
+  }
+  .home img {
+    width: 100%;
+  }
+  .home .titles {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
