@@ -224,4 +224,40 @@
           width: 100%;
           height: 40vh; } }
 
+footer {
+  background-color: #182430;
+  padding: 10px 50px; }
+  footer .navbar {
+    border-bottom: 1px solid #FFE421;
+    margin-bottom: 10px;
+    padding: 10px 0; }
+    footer .navbar .navigation2 {
+      display: flex; }
+      footer .navbar .navigation2 li {
+        margin: 0px 15px;
+        position: relative; }
+        footer .navbar .navigation2 li a {
+          font-family: "Sora", sans-serif;
+          color: #FFF652; }
+          footer .navbar .navigation2 li a:hover {
+            color: #FFE421; }
+  footer span {
+    color: #FFE421;
+    font-family: "Sora", sans-serif;
+    height: 30px;
+    padding-top: 10px; }
+  @media only screen and (max-width: 920px) {
+    footer {
+      padding: 8px 30px; }
+      footer .logo {
+        font-size: 1.4rem; }
+      footer .navbar {
+        display: block; }
+        footer .navbar .navigation2 {
+          display: block; }
+          footer .navbar .navigation2 li {
+            display: block;
+            padding: 20px;
+            border-bottom: 1px solid #fff; } }
+
 /*# sourceMappingURL=style.css.map */
