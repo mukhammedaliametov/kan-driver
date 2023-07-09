@@ -7,6 +7,7 @@
   text-decoration: none;
   list-style-type: none;
   font-family: sans-serif;
+  color: #fff;
 }
 
 .navbar {
@@ -46,6 +47,9 @@
   font-size: 1.2rem;
   color: #FFF652;
 }
+.navbar .networks a i:hover {
+  color: #FFE421;
+}
 .navbar .hamburger {
   display: none;
 }
@@ -77,7 +81,7 @@
   .navbar .navigation li {
     display: none;
     padding: 20px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid "Sora", sans-serif;
   }
   .navbar .navigation.active {
     display: inline;
