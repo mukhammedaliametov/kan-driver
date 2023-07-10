@@ -112,7 +112,6 @@ $globalFont2: "Sora", sans-serif;
 
     .navigation {
       position: absolute;
-  
       top: 93px;
       left: 0;
       width: 100%;
@@ -123,17 +122,15 @@ $globalFont2: "Sora", sans-serif;
       li {
         display: none;
         padding: 20px;
-        border-bottom: 1px solid $globalFont2;
       }
 
       &.active {
         display: inline;
         height: 42vh;
-        box-shadow: 2px 2px 8px #000;
-
+        box-shadow: 5px 10px 8px #5858588c;
         li {
           display: block;
-
+          border-bottom: 1px solid $simpleColor;
         }
       }
     }
