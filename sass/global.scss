@@ -118,6 +118,8 @@ $globalFont2: "Sora", sans-serif;
       height: 0vh;
       transition: .5s ease;
       padding-top: 10px;
+      box-shadow: 0 4px 2px -1px gray;
+
 
       li {
         display: none;
@@ -127,7 +129,6 @@ $globalFont2: "Sora", sans-serif;
       &.active {
         display: inline;
         height: 42vh;
-        box-shadow: 5px 10px 8px #5858588c;
         li {
           display: block;
           border-bottom: 1px solid $simpleColor;

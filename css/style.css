@@ -76,6 +76,7 @@
     height: 0vh;
     transition: 0.5s ease;
     padding-top: 10px;
+    box-shadow: 0 4px 2px -1px gray;
   }
   .navbar .navigation li {
     display: none;
@@ -84,7 +85,6 @@
   .navbar .navigation.active {
     display: inline;
     height: 42vh;
-    box-shadow: 5px 10px 8px rgba(88, 88, 88, 0.5490196078);
   }
   .navbar .navigation.active li {
     display: block;
