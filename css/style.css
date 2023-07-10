@@ -17,6 +17,7 @@
   align-items: center;
   padding: 10px 50px;
   z-index: 999;
+  box-shadow: 0 2px 2px -1px gray;
 }
 .navbar .logo, .navbar footer .first .navigation, footer .first .navbar .navigation {
   font-family: "Ubuntu", sans-serif;
@@ -53,6 +54,10 @@
 .navbar .hamburger {
   display: none;
 }
+.navbar.sticky {
+  position: fixed;
+  width: 100%;
+}
 @media only screen and (max-width: 1200px) {
   .navbar {
     padding: 10px 20px;
@@ -76,7 +81,7 @@
     height: 0vh;
     transition: 0.5s ease;
     padding-top: 10px;
-    box-shadow: 0 4px 2px -1px gray;
+    box-shadow: 0 2px 2px -1px gray;
   }
   .navbar .navigation li {
     display: none;
