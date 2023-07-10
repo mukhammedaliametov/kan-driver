@@ -32,6 +32,12 @@ $globalFont2: "Sora", sans-serif;
   }
 }
 
+.section-title{
+  color: $globalColor3;
+  font-family: $globalFont2;
+  font-size: 1.6rem;
+}
+
 // Global style
 * {
   margin: 0;
@@ -51,7 +57,8 @@ $globalFont2: "Sora", sans-serif;
   align-items: center;
   padding: 10px 50px;
   z-index: 999;
-  box-shadow: 0 2px 2px -1px gray;
+  position: fixed;
+  width: 100%;
 
   // Navbar logo
   .logo {
@@ -95,8 +102,7 @@ $globalFont2: "Sora", sans-serif;
   }
 
   &.sticky{
-    position: fixed;
-    width: 100%;
+    box-shadow: 0 3px 2px -1px #313e4b;
   }
 
   // Customization 1200px
@@ -170,15 +176,16 @@ $globalFont2: "Sora", sans-serif;
 
 // Home style
 .home {
-  height: calc(100vh - 100px);
+  height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 0px 30px;
+  padding-top: 90px;
 
   // Home img
   img {
-    width: 40%;
+    width: 45%;
   }
 
   // Home titles
@@ -233,10 +240,16 @@ $globalFont2: "Sora", sans-serif;
   }
 }
 
+// Drivers style
+#drivers{
+  
+}
+
 // Footer style
 footer{
   padding: 15px 50px;
   box-shadow: -10px 10px 10px 3px currentColor;
+  z-index: 5;
   // First footer
   .first{
     display: flex;
