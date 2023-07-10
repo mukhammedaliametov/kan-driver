@@ -8,6 +8,7 @@
   list-style-type: none;
   font-family: sans-serif;
   color: #fff;
+  background: #182430;
 }
 
 .navbar {
@@ -15,17 +16,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  background: #182430;
   z-index: 999;
 }
-.navbar .logo {
-  display: flex;
-  align-items: center;
+.navbar .logo, .navbar footer .first .navigation, footer .first .navbar .navigation {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
   color: #FFF652;
+  display: flex;
+  align-items: center;
 }
-.navbar .logo img {
+.navbar .logo img, .navbar footer .first .navigation img, footer .first .navbar .navigation img {
   margin-right: 10px;
 }
 .navbar .navigation {
@@ -65,12 +65,11 @@
   .navbar {
     padding: 8px 20px;
   }
-  .navbar .logo {
+  .navbar .logo, .navbar footer .first .navigation, footer .first .navbar .navigation {
     font-size: 1.4rem;
   }
   .navbar .navigation {
     position: absolute;
-    background-color: #182430;
     top: 93px;
     left: 0;
     width: 100%;
@@ -112,7 +111,6 @@
 }
 
 .home {
-  background-color: #182430;
   height: calc(100vh - 100px);
   display: flex;
   justify-content: space-evenly;
@@ -130,12 +128,18 @@
   font-family: "Ubuntu", sans-serif;
   font-size: 1.8rem;
   color: #FFF652;
+  display: flex;
+  align-items: center;
   font-size: 2.5rem;
   padding: 8px 0px;
   color: #fff;
 }
+.home .titles span img {
+  margin-right: 10px;
+}
 .home .titles span .text {
   color: #FFF652;
+  margin-left: 10px;
 }
 .home .titles p {
   padding: 5px 0px;
@@ -169,6 +173,64 @@
   }
   .home .titles {
     width: 100%;
+  }
+}
+
+footer {
+  padding: 15px 50px;
+  box-shadow: -10px 10px 10px 3px currentColor;
+}
+footer .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 8px;
+}
+footer .first .logo, footer .first .navigation {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  color: #FFF652;
+  display: flex;
+  align-items: center;
+}
+footer .first .logo img, footer .first .navigation img {
+  margin-right: 10px;
+}
+footer .first .navigation {
+  font-size: 0.9rem;
+}
+footer .first .navigation a {
+  margin: 0px 8px;
+  font-family: "Sora", sans-serif;
+  color: #FFF652;
+}
+footer .first .navigation a:hover {
+  color: #FFE421;
+}
+footer .first .navigation .networks a {
+  font-size: 1.2rem;
+}
+footer .second {
+  padding-top: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+@media only screen and (max-width: 940px) {
+  footer {
+    padding: 15px 20px;
+  }
+  footer .first {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  footer .first .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 10px 0px;
+  }
+  footer .first .navigation a {
+    margin: 8px 8px;
   }
 }
 

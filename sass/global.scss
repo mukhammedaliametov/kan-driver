@@ -12,6 +12,11 @@ $globalFont2: "Sora", sans-serif;
   font-family: $globalFont;
   font-size: 1.8rem;
   color: $globalColor2;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 10px;
+  }
 }
 
 @mixin global-button {
@@ -36,6 +41,7 @@ $globalFont2: "Sora", sans-serif;
   list-style-type: none;
   font-family: sans-serif;
   color: #fff;
+  background: $globalColor;
 }
 
 // Navbar style
@@ -44,18 +50,11 @@ $globalFont2: "Sora", sans-serif;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  background: $globalColor;
   z-index: 999;
 
   // Navbar logo
   .logo {
-    display: flex;
-    align-items: center;
     @include global-logo();
-
-    img {
-      margin-right: 10px;
-    }
   }
 
   // Navbar items
@@ -113,7 +112,7 @@ $globalFont2: "Sora", sans-serif;
 
     .navigation {
       position: absolute;
-      background-color: $globalColor;
+  
       top: 93px;
       left: 0;
       width: 100%;
@@ -168,7 +167,6 @@ $globalFont2: "Sora", sans-serif;
 
 // Home style
 .home {
-  background-color: $globalColor;
   height: calc(100vh - 100px);
   display: flex;
   justify-content: space-evenly;
@@ -193,6 +191,7 @@ $globalFont2: "Sora", sans-serif;
 
       .text {
         color: $globalColor2;
+        margin-left: 10px;
       }
     }
 
@@ -227,6 +226,60 @@ $globalFont2: "Sora", sans-serif;
 
     .titles {
       width: 100%;
+    }
+  }
+}
+
+// Footer style
+footer{
+  padding: 15px 50px;
+  box-shadow: -10px 10px 10px 3px currentColor;
+  // First footer
+  .first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $simpleColor;
+    padding-bottom: 8px;
+    .logo{
+      @include global-logo();
+    }
+    .navigation{
+      @extend .logo;
+      font-size: .9rem;
+      a{
+        margin: 0px 8px;
+        font-family: $globalFont2;
+        color: $globalColor2;
+        &:hover{
+          color: $globalColor3;
+        }
+      }
+      .networks a{
+        font-size: 1.2rem;
+      }
+    }
+  }
+  // Second footer
+  .second{
+    padding-top: 20px;
+    font-family: $globalFont;
+  }
+  // Customization 940px
+  @media only screen and (max-width: 940px){
+    padding: 15px 20px;
+    .first{
+      flex-direction: column;
+      align-items: baseline;
+      .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding: 10px 0px;
+        a{
+          margin: 8px 8px;
+        }
+      }
     }
   }
 }
