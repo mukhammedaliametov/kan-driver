@@ -32,10 +32,13 @@ $globalFont2: "Sora", sans-serif;
   }
 }
 
-.section-title{
-  color: $globalColor3;
-  font-family: $globalFont2;
-  font-size: 1.6rem;
+.section-logo{
+  width: 23%;
+  padding: 15px 0px;
+  @media only screen and (max-width: 940px){
+    width: 50%;
+    padding: 25px 0px;
+  }
 }
 
 // Global style
@@ -232,6 +235,7 @@ $globalFont2: "Sora", sans-serif;
 
     img {
       width: 100%;
+      margin-top: 70px;
     }
 
     .titles {
@@ -242,7 +246,8 @@ $globalFont2: "Sora", sans-serif;
 
 // Drivers style
 #drivers{
-  
+  text-align: center;
+  height: calc(100vh - 100px);
 }
 
 // Footer style
