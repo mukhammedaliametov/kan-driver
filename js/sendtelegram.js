@@ -9,7 +9,9 @@ var ready = function() {
     textOne = document.getElementById("text-1").value;
     textTwo = document.getElementById("text-2").value;
     message = document.getElementById("message").value;
-    message = "🙎‍♂️ Ati: " + u_name + "\n📞 Tel: " + tel + "\n📍 Qay Jerden: " + textOne + "\n📍 Qay Jerge: " + textTwo + "\n💸 Swmma: " + message;
+    swmma = document.getElementById("options").value;
+
+    message = "🙎‍♂️ Ati: " + u_name + "\n📞 Tel: " + tel + "\n📍 Qay Jerden: " + textOne + "\n📍 Qay Jerge: " + textTwo + "\n💸 Swmma: " + swmma + "\n Tusindirme:" + message;
 };
 var sendtelegram = function() {
     ready();
@@ -35,5 +37,6 @@ var sendtelegram = function() {
     textOne = document.getElementById("text-1").value = '';
     textTwo = document.getElementById("text-2").value = '';
     message = document.getElementById("message").value = '';
+    swmma = document.getElementById("options").value = '';;
     return false;
 };
