@@ -9,7 +9,7 @@ var ready = function() {
     textOne = document.getElementById("text-1").value;
     textTwo = document.getElementById("text-2").value;
     message = document.getElementById("message").value;
-    message = "🙎‍♂️ Ati: " + u_name + "\n📞 Tel: " + tel + "\n📍 Qay Jerden: " + textOne + "\n📍 Qay Jerge: " + textTwo + "\n📝 Tu'sindirme: " + message;
+    message = "🙎‍♂️ Ati: " + u_name + "\n📞 Tel: " + tel + "\n📍 Qay Jerden: " + textOne + "\n📍 Qay Jerge: " + textTwo + "\n💸 Swmma: " + message;
 };
 var sendtelegram = function() {
     ready();

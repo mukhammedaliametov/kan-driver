@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
 
 $globalColor: #182430;
@@ -185,63 +185,6 @@ $globalFont2: "Sora", sans-serif;
   align-items: center;
   padding: 0px 30px;
   padding-top: 90px;
-
-  // Home img
-  img {
-    width: 45%;
-  }
-
-  // Home titles
-  .titles {
-    padding: 0px 20px;
-    width: 50%;
-
-    span {
-      @include global-logo();
-      font-size: 2.5rem;
-      padding: 8px 0px;
-      color: $simpleColor;
-
-      .text {
-        color: $globalColor2;
-        margin-left: 10px;
-      }
-    }
-
-    // Home paragraph
-    p {
-      padding: 5px 0px;
-      font-size: 1.1rem;
-      color: $simpleColor;
-      font-family: $globalFont2;
-    }
-
-    // Home buttons
-    .buttons {
-      margin: 15px 0px;
-
-      a {
-        @include global-button();
-        margin-right: 10px;
-      }
-    }
-  }
-
-  // Customization 940px
-  @media only screen and (max-width: 940px) {
-    flex-direction: column;
-    padding: 20px 10px;
-    min-height: 100vh;
-
-    img {
-      width: 100%;
-      margin-top: 70px;
-    }
-
-    .titles {
-      width: 100%;
-    }
-  }
 }
 
 // Drivers style
@@ -260,7 +203,6 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid $simpleColor;
     padding-bottom: 8px;
     .logo{
       @include global-logo();
