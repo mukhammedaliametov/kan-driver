@@ -5,9 +5,11 @@ var chat_id = -1001893503530;
 var u_name, email, message;
 var ready = function() {
     u_name = document.getElementById("name").value;
-    email = document.getElementById("email").value;
+    tel = document.getElementById("tel").value;
+    textOne = document.getElementById("text-1").value;
+    textTwo = document.getElementById("text-2").value;
     message = document.getElementById("message").value;
-    message = "Ati: " + u_name + "\nEmail: " + email + "\nTu'sindirme: " + message;
+    message = "🙎‍♂️ Ati: " + u_name + "\n📞 Tel: " + tel + "\n📍 Qay Jerden: " + textOne + "\n📍 Qay Jerge: " + textTwo + "\n📝 Tu'sindirme: " + message;
 };
 var sendtelegram = function() {
     ready();
@@ -28,8 +30,10 @@ var sendtelegram = function() {
     $.ajax(settings).done(function(response) {
         console.log(response);
     });
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
+    u_name = document.getElementById("name").value = '';
+    tel = document.getElementById("tel").value = '';
+    textOne = document.getElementById("text-1").value = '';
+    textTwo = document.getElementById("text-2").value = '';
+    message = document.getElementById("message").value = '';
     return false;
 };
