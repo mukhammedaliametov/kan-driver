@@ -67,14 +67,14 @@
             type="tel"
             id="tel"
             placeholder="xx-xxx-xx-xx"
-            require
+            required
             pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}"
           />
           <br />
           <input type="text" id="text-1" placeholder="Qay jerden" required />
           <input type="text" id="text-2" placeholder="Qay jerge" required />
           <br />
-          <select id="moneys">
+          <select id="moneys" required >
             <option>Kelisimli</option>
             <option>3 000 uzs</option>
             <option>4 000 uzs</option>
@@ -85,7 +85,7 @@
             <option>9 000 uzs</option>
             <option>10 000 uzs</option>
           </select>
-          <input type="number" id="person" />
+          <input type="number" id="person" required />
           <br />
           <textarea
             name="message"
@@ -101,14 +101,10 @@
     </section>
     <!-- Start of footer -->
     <footer>
-      <div class="first">
-        <a href="" class="logo">
-          <img src="./images/logo.png" width="80" alt="" />
-          <p style="margin-right: 5px">Kan</p>
-          Driver
+        <a href="" class="creater">
+          Mukhammedali Ametov
         </a>
         <div class="second">Barlıq huqıqlar qorǵalǵan ©2023</div>
-      </div>
     </footer>
     <script src="./js/sendtelegram.js"></script>
     <script src="./js/script.js"></script>
