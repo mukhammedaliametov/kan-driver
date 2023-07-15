@@ -9,9 +9,10 @@ var ready = function() {
     textOne = document.getElementById("text-1").value;
     textTwo = document.getElementById("text-2").value;
     message = document.getElementById("message").value;
-    swmma = document.getElementById("options").value;
+    moneys = document.getElementById("moneys").value;
+    persons = document.getElementById("person").value;
 
-    message = "🙎‍♂️ Ati: " + u_name + "\n📞 Tel: " + `+998${tel}` + "\n📍 Qay Jerden: " + textOne + "\n📍 Qay Jerge: " + textTwo + "\n💸 Swmma: " + swmma + "\n Tusindirme: " + message;
+    message = "🙎‍♂️ Ati: " + u_name + "\n📞 Tel: " + `+998${tel}` + "\n📍 Qay Jerden: " + textOne + "\n📍 Qay Jerge: " + textTwo + "\n💸 Summa: " + moneys + "\n Neshe adam: " + persons + "\n Tusindirme: " + message;
 };
 var sendtelegram = function() {
     ready();
@@ -36,7 +37,8 @@ var sendtelegram = function() {
     tel = document.getElementById("tel").value = '';
     textOne = document.getElementById("text-1").value = '';
     textTwo = document.getElementById("text-2").value = '';
+    moneys = document.getElementById("moneys").value;
+    persons = document.getElementById("person").value;
     message = document.getElementById("message").value = '';
-    swmma = document.getElementById("options").value = '';;
     return false;
 };
