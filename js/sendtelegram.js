@@ -12,7 +12,7 @@ var ready = function() {
     moneys = document.getElementById("moneys").value;
     persons = document.getElementById("person").value;
 
-    message = "🙎‍♂️ Ati: " + u_name + "\n📞 Tel: " + `+998${tel}` + "\n📍 Qay Jerden: " + textOne + "\n📍 Qay Jerge: " + textTwo + "\n💸 Summa: " + moneys + "\n Neshe adam: " + persons + "\n Tusindirme: " + message;
+    message = "🙎‍♂️ Atı: " + u_name + "\n📞 Tel: " + `+998${tel}` + "\n📍 Qay Jerden: " + textOne + "\n📍 Qay Jerge: " + textTwo + "\n💸 Summa: " + moneys + "\n🧍 Adam sanı: " + `${persons} adam` + "\n📝 Tusindirme: " + message;
 };
 var sendtelegram = function() {
     ready();
