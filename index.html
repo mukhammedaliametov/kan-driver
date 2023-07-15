@@ -60,7 +60,14 @@
     <div class="form">
       <form action="" onsubmit=" return sendtelegram()">
         <input type="text" name="name" id="name" placeholder="Atin'iz" required />
-        <input type="tel" name="tel" id="tel" placeholder="Telefon Nomer" required value="+998" />
+        <input 
+        type="tel" 
+        name="tel" 
+        id="tel" 
+        placeholder="xx-xxx-xx-xx" 
+        require 
+        pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}"
+        />
         <br>
         <input type="text" name="text-1" id="text-1" placeholder="Qay jerden" required />
         <input type="text" name="text-2" id="text-2" placeholder="Qay jerge" required />

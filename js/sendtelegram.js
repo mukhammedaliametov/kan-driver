@@ -11,7 +11,7 @@ var ready = function() {
     message = document.getElementById("message").value;
     swmma = document.getElementById("options").value;
 
-    message = "🙎‍♂️ Ati: " + u_name + "\n📞 Tel: " + tel + "\n📍 Qay Jerden: " + textOne + "\n📍 Qay Jerge: " + textTwo + "\n💸 Swmma: " + swmma + "\n Tusindirme:" + message;
+    message = "🙎‍♂️ Ati: " + u_name + "\n📞 Tel: " + `+998${tel}` + "\n📍 Qay Jerden: " + textOne + "\n📍 Qay Jerge: " + textTwo + "\n💸 Swmma: " + swmma + "\n Tusindirme: " + message;
 };
 var sendtelegram = function() {
     ready();

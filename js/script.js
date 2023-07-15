@@ -1,18 +1,18 @@
 'use state'
 
-const hamburgerEl = document.querySelector('.hamburger');
-const navbarItems = document.querySelector('.navigation')
+const telNumber = document.querySelector('#tel').value;
+const sendBtn = document.querySelector('#btn');
 
-hamburgerEl.addEventListener('click', () => {
-  hamburgerEl.classList.toggle('active');
-  navbarItems.classList.toggle('active');
-});
-
-const closeNav = () => {
-  navbarItems.classList.remove('active');
+window.onload = function() {
+  document.getElementById("tel").focus();
 }
 
-window.addEventListener('scroll', function() {
-  const header = document.querySelector('.navbar');
-  header.classList.toggle('sticky', window.scrollY > 0) 
+const errorStr = ['A', 'B', 'C']
+sendBtn.addEventListener("click", () => {
+  if(typeof telNumber === errorStr){
+    alert('qate')
+  } else{
+    alert('duris');
+  }
 })
+
