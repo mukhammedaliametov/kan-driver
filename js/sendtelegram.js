@@ -37,8 +37,8 @@ var sendtelegram = function() {
     tel = document.getElementById("tel").value = '';
     textOne = document.getElementById("text-1").value = '';
     textTwo = document.getElementById("text-2").value = '';
-    moneys = document.getElementById("moneys").value;
-    persons = document.getElementById("person").value;
+    moneys = document.getElementById("moneys").value = 'Kelisimli';
+    persons = document.getElementById("person").value = '';
     message = document.getElementById("message").value = '';
     return false;
 };
