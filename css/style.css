@@ -131,6 +131,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 140px 0px;
 }
 .home .form {
   width: 60%;
@@ -198,6 +199,17 @@
 .home .form #btn:active {
   background: transparent;
   color: #fff;
+}
+@media only screen and (max-width: 940px) {
+  .home .form {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0;
+  }
+  .home .form .inputs {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 footer {

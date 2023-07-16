@@ -183,6 +183,7 @@ $globalFont2: "Sora", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 140px 0px;
   .form{
     width: 60%;
     padding: 10px;
@@ -250,6 +251,17 @@ $globalFont2: "Sora", sans-serif;
       &:active{
         background: transparent;
         color: $simpleColor;
+      }
+    }
+  }
+  @media only screen and (max-width: 940px){
+    .form{
+      width: 100%;
+      padding: 10px 20px;
+      margin: 0;
+      .inputs{
+        display: flex;
+        flex-direction: column;
       }
     }
   }
