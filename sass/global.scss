@@ -179,18 +179,80 @@ $globalFont2: "Sora", sans-serif;
 
 // Home style
 .home {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: 0px 30px;
-  padding-top: 90px;
-}
-
-// Drivers style
-#drivers{
-  text-align: center;
-  height: calc(100vh - 100px);
+  .form{
+    width: 60%;
+    padding: 10px;
+    margin: 0px 20px;
+    .inputs{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 1rem;
+      .label{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .tel{
+          display: flex;
+          align-items: center;
+        }
+        label{
+          font-family: $globalFont2;
+          padding: 5px 0px;
+        }
+        input{
+          width: 100%;
+          padding: 5px 10px;
+          font-family: $globalFont2;
+          font-size: 1rem;
+          outline: none;
+          border-radius: 5px;
+          border: 1px solid $globalColor2;
+        }
+        select{
+          @extend input;
+          option{
+            font-family: $globalFont2;
+            &:hover{
+              background: $globalColor3;
+            }
+          }
+        }
+      }
+    }
+    textarea{
+      width: 100%;
+      margin: 20px 0px;
+      height: 20vh;
+      resize: none;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid $globalColor2;
+      padding: 10px;
+      font-family: $globalFont2;
+      font-size: 1rem;
+    }
+    #btn{
+      width: 100%;
+      padding: 10px 0px;
+      border: 1px solid $globalColor2;
+      font-family: $globalFont2;
+      border-radius: 5px;
+      font-size: .9rem;
+      cursor: pointer;
+      &:hover{
+        background: $globalColor2;
+        color: $globalColor;
+      }
+      &:active{
+        background: transparent;
+        color: $simpleColor;
+      }
+    }
+  }
 }
 
 // Footer style

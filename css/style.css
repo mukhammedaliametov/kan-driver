@@ -2,11 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
 .section-logo {
   width: 23%;
-  padding: 15px 0px; }
-  @media only screen and (max-width: 940px) {
-    .section-logo {
-      width: 50%;
-      padding: 25px 0px; } }
+  padding: 15px 0px;
+}
+@media only screen and (max-width: 940px) {
+  .section-logo {
+    width: 50%;
+    padding: 25px 0px;
+  }
+}
 
 * {
   margin: 0;
@@ -16,7 +19,8 @@
   list-style-type: none;
   font-family: sans-serif;
   color: #fff;
-  background: #182430; }
+  background: #182430;
+}
 
 .navbar {
   display: flex;
@@ -25,131 +29,233 @@
   padding: 10px 50px;
   z-index: 999;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+}
+.navbar .logo, .navbar footer .first .navigation, footer .first .navbar .navigation {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  color: #FFF652;
+  display: flex;
+  align-items: center;
+}
+.navbar .logo img, .navbar footer .first .navigation img, footer .first .navbar .navigation img {
+  margin-right: 10px;
+}
+.navbar .navigation {
+  display: flex;
+}
+.navbar .navigation li {
+  margin: 0px 15px;
+  position: relative;
+}
+.navbar .navigation li a {
+  font-family: "Sora", sans-serif;
+  color: #FFF652;
+}
+.navbar .navigation li a:hover {
+  color: #FFE421;
+}
+.navbar .networks a {
+  margin: 0px 8px;
+  font-size: 1.2rem;
+  color: #FFF652;
+}
+.navbar .networks a i:hover {
+  color: #FFE421;
+}
+.navbar .hamburger {
+  display: none;
+}
+.navbar.sticky {
+  box-shadow: 0 3px 2px -1px #313e4b;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  .navbar .networks {
+    display: none;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .navbar {
+    padding: 8px 20px;
+  }
   .navbar .logo, .navbar footer .first .navigation, footer .first .navbar .navigation {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 1.8rem;
-    color: #FFF652;
-    display: flex;
-    align-items: center; }
-    .navbar .logo img, .navbar footer .first .navigation img, footer .first .navbar .navigation img {
-      margin-right: 10px; }
+    font-size: 1.4rem;
+  }
   .navbar .navigation {
-    display: flex; }
-    .navbar .navigation li {
-      margin: 0px 15px;
-      position: relative; }
-      .navbar .navigation li a {
-        font-family: "Sora", sans-serif;
-        color: #FFF652; }
-        .navbar .navigation li a:hover {
-          color: #FFE421; }
-  .navbar .networks a {
-    margin: 0px 8px;
-    font-size: 1.2rem;
-    color: #FFF652; }
-    .navbar .networks a i:hover {
-      color: #FFE421; }
+    position: absolute;
+    top: 93px;
+    left: 0;
+    width: 100%;
+    height: 0vh;
+    transition: 0.5s ease;
+    padding-top: 10px;
+    box-shadow: 0 2px 2px -1px gray;
+  }
+  .navbar .navigation li {
+    display: none;
+    padding: 20px;
+  }
+  .navbar .navigation.active {
+    display: inline;
+    height: 42vh;
+  }
+  .navbar .navigation.active li {
+    display: block;
+    border-bottom: 1px solid #fff;
+  }
   .navbar .hamburger {
-    display: none; }
-  .navbar.sticky {
-    box-shadow: 0 3px 2px -1px #313e4b; }
-  @media only screen and (max-width: 1200px) {
-    .navbar {
-      padding: 10px 20px; }
-      .navbar .networks {
-        display: none; } }
-  @media only screen and (max-width: 940px) {
-    .navbar {
-      padding: 8px 20px; }
-      .navbar .logo, .navbar footer .first .navigation, footer .first .navbar .navigation {
-        font-size: 1.4rem; }
-      .navbar .navigation {
-        position: absolute;
-        top: 93px;
-        left: 0;
-        width: 100%;
-        height: 0vh;
-        transition: .5s ease;
-        padding-top: 10px;
-        box-shadow: 0 2px 2px -1px gray; }
-        .navbar .navigation li {
-          display: none;
-          padding: 20px; }
-        .navbar .navigation.active {
-          display: inline;
-          height: 42vh; }
-          .navbar .navigation.active li {
-            display: block;
-            border-bottom: 1px solid #fff; }
-      .navbar .hamburger {
-        display: block; }
-        .navbar .hamburger .fa-bars {
-          font-size: 1.5rem;
-          color: #FFF652; }
-        .navbar .hamburger .fa-times {
-          font-size: 1.5rem;
-          color: #FFF652;
-          display: none; }
-        .navbar .hamburger.active .fa-times {
-          display: block; }
-        .navbar .hamburger.active .fa-bars {
-          display: none; } }
+    display: block;
+  }
+  .navbar .hamburger .fa-bars {
+    font-size: 1.5rem;
+    color: #FFF652;
+  }
+  .navbar .hamburger .fa-times {
+    font-size: 1.5rem;
+    color: #FFF652;
+    display: none;
+  }
+  .navbar .hamburger.active .fa-times {
+    display: block;
+  }
+  .navbar .hamburger.active .fa-bars {
+    display: none;
+  }
+}
 
 .home {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding: 0px 30px;
-  padding-top: 90px; }
-
-#drivers {
-  text-align: center;
-  height: calc(100vh - 100px); }
+}
+.home .form {
+  width: 60%;
+  padding: 10px;
+  margin: 0px 20px;
+}
+.home .form .inputs {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+.home .form .inputs .label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.home .form .inputs .label .tel {
+  display: flex;
+  align-items: center;
+}
+.home .form .inputs .label label {
+  font-family: "Sora", sans-serif;
+  padding: 5px 0px;
+}
+.home .form .inputs .label input, .home .form .inputs .label select {
+  width: 100%;
+  padding: 5px 10px;
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #FFF652;
+}
+.home .form .inputs .label select option {
+  font-family: "Sora", sans-serif;
+}
+.home .form .inputs .label select option:hover {
+  background: #FFE421;
+}
+.home .form textarea {
+  width: 100%;
+  margin: 20px 0px;
+  height: 20vh;
+  resize: none;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #FFF652;
+  padding: 10px;
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+}
+.home .form #btn {
+  width: 100%;
+  padding: 10px 0px;
+  border: 1px solid #FFF652;
+  font-family: "Sora", sans-serif;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.home .form #btn:hover {
+  background: #FFF652;
+  color: #182430;
+}
+.home .form #btn:active {
+  background: transparent;
+  color: #fff;
+}
 
 footer {
   padding: 15px 50px;
   box-shadow: -10px 10px 10px 3px currentColor;
-  z-index: 5; }
+  z-index: 5;
+}
+footer .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
+footer .first .logo, footer .first .navigation {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.8rem;
+  color: #FFF652;
+  display: flex;
+  align-items: center;
+}
+footer .first .logo img, footer .first .navigation img {
+  margin-right: 10px;
+}
+footer .first .navigation {
+  font-size: 0.9rem;
+}
+footer .first .navigation a {
+  margin: 0px 8px;
+  font-family: "Sora", sans-serif;
+  color: #FFF652;
+}
+footer .first .navigation a:hover {
+  color: #FFE421;
+}
+footer .first .navigation .networks a {
+  font-size: 1.2rem;
+}
+footer .second {
+  padding-top: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+@media only screen and (max-width: 940px) {
+  footer {
+    padding: 15px 20px;
+  }
   footer .first {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  footer .first .navigation {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 8px; }
-    footer .first .logo, footer .first .navigation {
-      font-family: "Ubuntu", sans-serif;
-      font-size: 1.8rem;
-      color: #FFF652;
-      display: flex;
-      align-items: center; }
-      footer .first .logo img, footer .first .navigation img {
-        margin-right: 10px; }
-    footer .first .navigation {
-      font-size: .9rem; }
-      footer .first .navigation a {
-        margin: 0px 8px;
-        font-family: "Sora", sans-serif;
-        color: #FFF652; }
-        footer .first .navigation a:hover {
-          color: #FFE421; }
-      footer .first .navigation .networks a {
-        font-size: 1.2rem; }
-  footer .second {
-    padding-top: 20px;
-    font-family: "Ubuntu", sans-serif; }
-  @media only screen and (max-width: 940px) {
-    footer {
-      padding: 15px 20px; }
-      footer .first {
-        flex-direction: column;
-        align-items: baseline; }
-        footer .first .navigation {
-          display: flex;
-          flex-direction: column;
-          align-items: baseline;
-          padding: 10px 0px; }
-          footer .first .navigation a {
-            margin: 8px 8px; } }
+    flex-direction: column;
+    align-items: baseline;
+    padding: 10px 0px;
+  }
+  footer .first .navigation a {
+    margin: 8px 8px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
