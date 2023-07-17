@@ -71,7 +71,9 @@ $globalFont2: "Sora", sans-serif;
   // Navbar items
   .navigation {
     display: flex;
-
+    .networks{
+      display: none;
+    }
     li {
       margin: 0px 15px;
       position: relative;
@@ -111,7 +113,6 @@ $globalFont2: "Sora", sans-serif;
   // Customization 1200px
   @media only screen and (max-width: 1200px) {
     padding: 10px 20px;
-
     .networks {
       display: none;
     }
@@ -134,7 +135,7 @@ $globalFont2: "Sora", sans-serif;
       transition: .5s ease;
       padding-top: 10px;
       box-shadow: 0 2px 2px -1px gray;
-
+      
       li {
         display: none;
         padding: 20px;
@@ -146,6 +147,13 @@ $globalFont2: "Sora", sans-serif;
         li {
           display: block;
           border-bottom: 1px solid $simpleColor;
+        }
+        .networks{
+          display: block;
+          padding: 20px;
+          a{
+            margin: 20px;
+          }
         }
       }
     }
@@ -269,54 +277,21 @@ $globalFont2: "Sora", sans-serif;
 
 // Footer style
 footer{
-  padding: 15px 50px;
+  padding: 30px 50px;
   box-shadow: -10px 10px 10px 3px currentColor;
   z-index: 5;
-  // First footer
-  .first{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 8px;
-    .logo{
-      @include global-logo();
-    }
-    .navigation{
-      @extend .logo;
-      font-size: .9rem;
-      a{
-        margin: 0px 8px;
-        font-family: $globalFont2;
-        color: $globalColor2;
-        &:hover{
-          color: $globalColor3;
-        }
-      }
-      .networks a{
-        font-size: 1.2rem;
-      }
-    }
+  display: flex;
+  justify-content: space-between;
+  a{
+    color: $globalColor3;
+    font-family: $globalFont2;
   }
-  // Second footer
   .second{
-    padding-top: 20px;
-    font-family: $globalFont;
+    color: $simpleColor;
+    font-family: $globalFont2;
   }
-  // Customization 940px
   @media only screen and (max-width: 940px){
-    padding: 15px 20px;
-    .first{
-      flex-direction: column;
-      align-items: baseline;
-      .navigation{
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        padding: 10px 0px;
-        a{
-          margin: 8px 8px;
-        }
-      }
-    }
+    flex-direction: column;
+    padding: 15px 30px;
   }
 }

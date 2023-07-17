@@ -10,3 +10,11 @@ sendBtn.addEventListener("click", () => {
   null
 })
 
+const navEl = document.querySelector('.navigation');
+const hamburgerEl = document.querySelector('.hamburger');
+
+hamburgerEl.addEventListener('click', () => {
+  navEl.classList.toggle('active');
+  hamburgerEl.classList.toggle('active');
+})
+
