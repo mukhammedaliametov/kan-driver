@@ -293,5 +293,8 @@ footer{
   @media only screen and (max-width: 940px){
     flex-direction: column;
     padding: 15px 30px;
+    a{
+      padding: 15px 0;
+    }
   }
 }

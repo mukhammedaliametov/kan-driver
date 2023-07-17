@@ -188,6 +188,8 @@ footer {
   @media only screen and (max-width: 940px) {
     footer {
       flex-direction: column;
-      padding: 15px 30px; } }
+      padding: 15px 30px; }
+      footer a {
+        padding: 15px 0; } }
 
 /*# sourceMappingURL=style.css.map */
