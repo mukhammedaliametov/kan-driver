@@ -58,7 +58,7 @@ $globalFont2: "Sora", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+  padding: 10px 80px;
   z-index: 999;
   position: fixed;
   width: 100%;
@@ -89,18 +89,6 @@ $globalFont2: "Sora", sans-serif;
     }
   }
 
-  // Navbar networks
-  .networks {
-    a {
-      margin: 0px 8px;
-      font-size: 1.2rem;
-      color: $globalColor2;
-      i:hover{
-        color: $globalColor3;
-      }
-    }
-  }
-
   // Navbar hamburger menu
   .hamburger {
     display: none;
@@ -113,9 +101,6 @@ $globalFont2: "Sora", sans-serif;
   // Customization 1200px
   @media only screen and (max-width: 1200px) {
     padding: 10px 20px;
-    .networks {
-      display: none;
-    }
   }
 
   // Customization 940px
