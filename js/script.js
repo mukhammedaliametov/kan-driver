@@ -1,20 +1,19 @@
-'use state'
+"use strict";
 
-const sendBtn = document.querySelector('#btn');
+const sendBtn = document.querySelector("#btn");
 
-window.onload = function() {
+window.onload = function () {
   document.getElementById("tel").focus();
-}
+};
 
 sendBtn.addEventListener("click", () => {
-  null
-})
+  null;
+});
 
-const navEl = document.querySelector('.navigation');
-const hamburgerEl = document.querySelector('.hamburger');
+const navEl = document.querySelector(".navigation");
+const hamburgerEl = document.querySelector(".hamburger");
 
-hamburgerEl.addEventListener('click', () => {
-  navEl.classList.toggle('active');
-  hamburgerEl.classList.toggle('active');
-})
-
+hamburgerEl.addEventListener("click", () => {
+  navEl.classList.toggle("active");
+  hamburgerEl.classList.toggle("active");
+});
